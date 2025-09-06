@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <header class="container">
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__list__list_item"><a href="index.html">Back to Google Search</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container">
+            <section class="search">
+                <div class="search__logo">
+                    <img src="./src/Google_2015_logo.svg" alt="">
+                </div>
+                <h1>Search for Images</h1>
+                <form class="search__search-form" action="https://google.com/search?umd=2&q=">
+                    <label class="search__search-form__search-input" for="search-input">
+                        <img class="search__search-form__search-input__search-icon" src="./src/tabler--search.svg" alt="">
+                        <input class="search__search-form__search-input__search-input" id="search-input" type="search" name="q" placeholder="Search Google or type a URL">
+                        <input hidden type="search" name="udm" value="2">
+                    </label>
+                    <input class="search__search-form__search-input__submit-button" type="submit" value="Google Search">
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

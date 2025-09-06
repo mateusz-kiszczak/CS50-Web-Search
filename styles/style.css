@@ -1,0 +1,344 @@
+/* COLORS */
+
+/* search input #5F6368
+/* font #212121
+
+/* RESET */
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+/*
+  10. Reset input search
+*/
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+input[type="search"]:focus {
+    outline: none;
+    background-color: transparent;
+}
+
+
+/* TYPOGRAPHY */
+
+* {
+    font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* GLOBAL */
+
+.container {
+    padding: 16px;
+    width: 100%;
+
+    @media only screen and (min-width: 568px) {
+        padding: 32px;
+    }
+}
+
+
+/* HOME PAGE and SEARCH IMAGE*/
+
+/* Navigation */
+
+.main-nav {
+    width: 100%;
+}
+
+.main-nav__list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: end;
+    gap: 24px;
+}
+
+.main-nav__list__list_item a {
+    color: #212121;
+    text-decoration: none;
+    letter-spacing: -.5px;
+    font-size: .9rem;
+}
+
+.main-nav__list__list_item a:hover {
+    text-decoration: underline;
+}
+
+/* Search Section */
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.search > h1 {
+    color: #5F6368;
+}
+
+.search__logo {
+    width: 320px;
+
+    @media only screen and (max-width: 568px) {
+        width: 65vw;
+    }
+}
+
+.search__logo > img {
+    width: 100%;
+}
+
+.search__search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+.search__search-form__search-input {
+    display: flex;
+    flex-direction: row;
+    border-radius: 100px;
+    padding: 12px 24px;
+    border: 1px solid #D9D9D9;
+    width: 80vw;
+    max-width: 700px;
+}
+
+.search__search-form__search-input:hover,
+.search__search-form__search-input:focus {
+    box-shadow: 0 1px 4px 1px #d2d6dd;
+}
+
+.search__search-form__search-input__search-icon {
+    width: 22px;
+}
+
+.search__search-form__search-input__search-input {
+    border: none;
+    width: 100%;
+    margin: 0 16px;
+    color: #212121;
+    font-weight: 500;
+}
+
+.search__search-form__search-input__search-input::placeholder {
+    color: #5F6368;
+    font-weight: 400;
+}
+
+.search__search-form__search-input__buttons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.search__search-form__search-input__submit-button {
+    border: none;
+    background-color: #F8F9FA;
+    width: fit-content;
+    padding: 8px 24px;
+    color: #202124;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search__search-form__search-input__submit-button:hover {
+    box-shadow: 0 0 0 1px #dcdee0, 0 1px 2px 1px #b1b4b9;
+}
+
+
+/* ADVANCED SEARCH*/
+
+.advanced-search-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.advanced-search-nav__logo > img {
+    height: 28px;
+}
+
+.advanced-search-header h1 {
+    font-size: 1.25rem;
+    color: #D93025;
+    font-weight: 400;
+}
+
+.advanced-search-container {
+    padding: 16px 64px;
+}
+
+.divider {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #EBEBEB;
+    margin: 16px 0;
+    padding: 0;
+}
+
+.advanced-search__form-header-container {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto;
+    align-items: center;
+    gap: 32px;
+
+    @media only screen and (min-width: 1056px) {
+        grid-template-columns: 200px auto 300px;
+    }
+}
+
+.advanced-search__form-header {
+    font-size: 1.25rem;
+    color: #333333;
+    font-weight: 400;
+}
+
+.advanced-search__form-header__blank {
+    display: none;
+
+    @media only screen and (min-width: 1056px) {
+        display: inline-block;
+    }
+}
+
+.advanced-search__form-header__to-do {
+    display: none;
+    color: #636363;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    @media only screen and (min-width: 1056px) {
+        display: inline-block;
+    }
+}
+
+.advanced-search__form {
+    margin-top: 32px;
+    width: 70vw;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media only screen and (min-width: 1056px) {
+        width: 100%;
+    }
+}
+
+.advanced-search__form__input-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto;
+    align-items: center;
+    gap: 32px;
+
+    @media only screen and (min-width: 1056px) {
+        grid-template-columns: 200px auto 300px;
+    }
+}
+
+.advanced-search__form__label {
+    display: inline-block;
+    color: #333333;
+    font-weight: 500;
+    width: 200px;
+}
+
+.advanced-search__form__input {
+    display: inline-block;
+    padding: 4px 8px;
+    border: 1px solid #D9D9D9;
+    border-top-color: #C0C0C0;
+    border-radius: 1px;
+    width: 100%;
+}
+
+.advanced-search__form__input:focus {
+    border-color: #4888EF;
+    box-shadow: inset 0 1px 2px 1px #C0C0C0;
+}
+
+.advances-search__form__legend {
+    display: none;
+    color: #424242;
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    @media only screen and (min-width: 1056px) {
+        display: inline-block;
+    }    
+}
+
+.advances-search__form__legend > span {
+    font-family: monospace;  
+    font-weight: 400;
+}
+
+.advanced-search__form__submit-button {
+    background-color: #4B8EFA;
+    border: 2px solid #3079ED;
+    width: fit-content;
+    padding: 8px 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 700;
+    align-self: center;
+    margin-top: 16px;
+    justify-self: end;
+}
+
+.advanced-search__form__submit-button:hover {
+    background-color: #4888EF;
+    border-color: #0d52c0;
+    box-shadow: inset 0 -1px 50px 1px #2471ee;
+}

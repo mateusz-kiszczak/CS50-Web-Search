@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <header class="container">
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__list__list_item"><a href="image_search.html">Images</a></li>
+                    <li class="main-nav__list__list_item"><a href="advanced_search.html">Advanced Search</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container">
+            <section class="search">
+                <div class="search__logo">
+                    <img src="./src/Google_2015_logo.svg" alt="">
+                </div>
+                <form class="search__search-form" action="https://google.com/search">
+                    <label class="search__search-form__search-input" for="search-input">
+                        <img class="search__search-form__search-input__search-icon" src="./src/tabler--search.svg" alt="">
+                        <input class="search__search-form__search-input__search-input" id="search-input" type="search" name="q" placeholder="Search Google or type a URL">
+                    </label>
+                    <div class="search__search-form__search-input__buttons-container">
+                        <input class="search__search-form__search-input__submit-button" type="submit" value="Google Search">
+                        <input class="search__search-form__search-input__submit-button" name="btnI" type="submit" value="I’m Feeling Lucky">
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
