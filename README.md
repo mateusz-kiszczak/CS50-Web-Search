@@ -4,7 +4,7 @@ My implementation of the problem from the CS50 Web's  Problem Set 0 - Search.
 
 CS50 WEB - Week 0 - HTML, CSS
 
-## Video Demo: [https://youtu.be/s7yCuozAW-U]
+## Video Demo: [Search Video Demo](https://youtu.be/s7yCuozAW-U)
 
 ## Problem to Solve
 
