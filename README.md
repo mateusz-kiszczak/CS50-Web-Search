@@ -2,8 +2,8 @@
 
 My implementation of the problem from the CS50 Web's  Project 0 - Search.
 
-CS50 WEB - Week 0 - HTML, CSS
-CS50 WEB - Week 1 - Git
+CS50 WEB - Week 0 - HTML, CSS \
+CS50 WEB - Week 1 - Git \
 CS50 WEB - Week 2 - Python
 
 ## Video Demo: [Search Video Demo](https://youtu.be/s7yCuozAW-U)
